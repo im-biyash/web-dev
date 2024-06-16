@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main {
+            height: 100vh;
+        }
+        .container {
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px;
+            background: antiquewhite;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        .image {
+            width: 150px;
+            height: fit-content;
+        }
+        .heroimage {
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        .programs {
+            text-align: center;
+            padding: 20px;
+        }
+        .programs h1 {
+            margin-bottom: 20px;
+        }
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease;
+           
+        }
+        .card:hover{
+            transform: scale(1.05);
+            background-color: azure;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <nav>
+               <img src="logo.png" alt="logo" class="image">
+                <ul>
+                    <li>Home</li>
+                    <li>Programs</li>
+                    <li>Result</li>
+                    <li>Contact</li>
+                </ul>
+                <button>Sign in</button>
+            </nav>
+            <div class="hero">
+                <img src="utech.jpg" alt="" class="heroimage">
+            </div>
+        </div>
+        <div class="programs">
+            <h1>Our Programs</h1>
+            <div class="program-grid">
+                <div class="card">
+                    <img src="computer_engineering.jpg" alt="BE in Computer Engineering">
+                    <div class="card-content">
+                        <h2>BE in Computer Engineering</h2>
+                        <p>Learn the fundamentals of computer engineering.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="it.jpg" alt="BE in Information Technology">
+                    <div class="card-content">
+                        <h2>BE in Information Technology</h2>
+                        <p>Explore the world of IT and software development.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="electrical_engineering.jpg" alt="BE in Electrical Engineering">
+                    <div class="card-content">
+                        <h2>BE in Electrical Engineering</h2>
+                        <p>Understand the principles of electrical systems.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="mechanical_engineering.jpg" alt="BE in Mechanical Engineering">
+                    <div class="card-content">
+                        <h2>BE in Mechanical Engineering</h2>
+                        <p>Delve into the mechanics of machines and devices.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="civil_engineering.jpg" alt="BE in Civil Engineering">
+                    <div class="card-content">
+                        <h2>BE in Civil Engineering</h2>
+                        <p>Learn about construction and infrastructure.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="electronics_engineering.jpg" alt="BE in Electronics Engineering">
+                    <div class="card-content">
+                        <h2>BE in Electronics Engineering</h2>
+                        <p>Study the design of electronic circuits and devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
